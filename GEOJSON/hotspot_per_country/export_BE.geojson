@@ -1,0 +1,5 @@
+{
+	"type": "FeatureCollection",
+	"features":
+[{"type": "Feature", "geometry": {"coordinates": [4.4863701, 50.9043319], "type": "Point"}, "properties": {"sp_nb": 4, "loc-id": "L1232399", "subnational1-code": "BE-VLG", "lat": "50.9043319", "sp_max": 4, "country-code": "BE", "sp_region_nb": 4, "lng": "4.4863701", "rank": 1, "sp_list": ["Herring Gull", "White/Pied Wagtail", "Common Kestrel", "Carrion Crow"], "loc-name": "Brussels Airport", "checklists": ["S22592200"]}}]
+}

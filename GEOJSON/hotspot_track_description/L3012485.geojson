@@ -1,0 +1,163 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "track",
+        "description": "2.24 km"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            6.569475531578064,
+            46.72432232015337
+          ],
+          [
+            6.569668650627136,
+            46.723939873492164
+          ],
+          [
+            6.569647192955017,
+            46.72381484226486
+          ],
+          [
+            6.568767428398131,
+            46.72430761071655
+          ],
+          [
+            6.568649411201477,
+            46.72433335222837
+          ],
+          [
+            6.568359732627869,
+            46.72431128807614
+          ],
+          [
+            6.568220257759094,
+            46.724263482381986
+          ],
+          [
+            6.566589474678039,
+            46.722207797457315
+          ],
+          [
+            6.564888954162598,
+            46.72004170480024
+          ],
+          [
+            6.563885807991028,
+            46.718132970434574
+          ],
+          [
+            6.559846401214599,
+            46.721082469851
+          ],
+          [
+            6.562651991844177,
+            46.724204644546404
+          ],
+          [
+            6.565135717391968,
+            46.722788839777806
+          ],
+          [
+            6.565049886703491,
+            46.722674838296975
+          ],
+          [
+            6.565462946891785,
+            46.72302051946433
+          ],
+          [
+            6.566557288169861,
+            46.72222250746669
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "observatory",
+        "description": "This is the most intresting viewpoint. There's a new observatory. Check for water rail, ..."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.564953327178955,
+          46.720935366468474
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "observatory",
+        "description": "Old observatory. Here you can get close to the ducks, swan and grebe. This is the deepst par of the wetland. This observatory don't add to much compare to the main observatory."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.565060615539551,
+          46.72269690311852
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "viewpoint",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.566782593727112,
+          46.7218032706279
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "viewpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.561592519283295,
+          46.72272816160026
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "viewpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.564878225326538,
+          46.720026994196274
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "parking",
+        "description": "This is the closest place to park your car.  From Chavorney, turn north at the main round-about. Turn left just after the farm, you will cross the rail and turn left on the small road that passed under the highway. Check on the thistle for goldfinch, under the highway for kestrel, and you can also see a swallow colonie at the farm. I also sometimes see few bird on the hedge leading to the parking (yellowhammer...)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.569459438323975,
+          46.72430025599664
+        ]
+      }
+    }
+  ]
+}

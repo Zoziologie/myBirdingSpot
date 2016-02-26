@@ -1,0 +1,5 @@
+{
+	"type": "FeatureCollection",
+	"features":
+[{"type": "Feature", "geometry": {"coordinates": [-71.0202599, 42.3659007], "type": "Point"}, "properties": {"sp_nb": 2, "subnational1-code": "US-MA", "lat": "42.3659007", "sp_max": 2, "country-code": "US", "sp_region_nb": 2, "lng": "-71.0202599", "rank": 1, "sp_list": ["Herring Gull", "Feral Pigeon"], "subnational2-code": "", "checklists": ["S22089293"], "loc-name": "Logan Airport"}}]
+}
