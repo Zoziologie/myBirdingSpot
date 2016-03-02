@@ -50,7 +50,7 @@ function LoadGeoJson(country){
 	jQuery.ajax({
 		dataType: "json",
 		contentType: "text/plain; charset=UTF-8",
-		url: "https://raw.githubusercontent.com/Rafnuss/Zoziologie-map/master/hotspot_per_country/export_" + country + ".geojson",
+		url: "https://raw.githubusercontent.com/Zoziologie/myBirdingSpot/master/GEOJSON/hotspot_per_country/export_" + country + ".geojson",
 		success: function(file) {
 			jQuery(file.features).each(function(key,feature) {
 				if('loc-id' in feature.properties){
@@ -72,7 +72,7 @@ function LoadDescription(p){
 	jQuery.ajax({
 		dataType: "json",
 		contentType: "text/plain; charset=UTF-8",
-		url: 'https://raw.githubusercontent.com/Rafnuss/Zoziologie-map/master/hotspot_track_description/' + p['loc-id'] +'.geojson',
+		url: 'https://raw.githubusercontent.com/Zoziologie/myBirdingSpot/master/GEOJSON/hotspot_track_description/' + p['loc-id'] +'.geojson',
 		success: function(file) {
 			jQuery('.hotspot-description').append("<div style='padding-bottom:20px; overflow: hidden;'><div id='map-hotspot-" + p['loc-id'] + "' style='width:75%;height:300px;float: left;'></div><div id='description-hotspot-" + p['loc-id'] + "' style='width:25%;float: left;height: 300px; overflow: auto;'></div></div>")
 			map_hot_des[p['loc-id']] = L.map("map-hotspot-" + p['loc-id'],{sleep:false});
@@ -142,7 +142,7 @@ function LoadRegion(){
 	jQuery.ajax({
 		dataType: "json",
 		contentType: "text/plain; charset=UTF-8",
-		url: 'https://raw.githubusercontent.com/Rafnuss/Zoziologie-map/master/Region_polygon.geojson',
+		url: 'https://raw.githubusercontent.com/Zoziologie/myBirdingSpot/master/GEOJSON/Region_polygon.geojson',
 		success: function(file) {
 			var area = L.geoJson(file.features,{
 				style: function (f) {
