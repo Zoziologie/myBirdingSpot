@@ -1,0 +1,96 @@
+/* MAP BIOLOVISION IMPROVED*/	 	 
+.map {	 	 
+ height: 500px;	 	 
+}	 	 
+ul.nav-pills li a {	 	 
+ cursor: pointer;	 	 
+}	
+.list-group-horizontal{
+ margin-bottom:0px;
+} 	 
+.list-group-horizontal .list-group-item {	 	 
+ display: inline-block;	 	 
+}	 	 
+.list-group-horizontal .list-group-item {	 	 
+ margin-bottom: 0;	 	 
+ margin-left: -4px;	 	 
+ margin-right: 0;	 	 
+ cursor: pointer;	 	 
+}	 	 
+.list-group-horizontal .list-group-item:first-child {	 	 
+ border-top-right-radius: 0;	 	 
+ border-bottom-left-radius: 4px;	 	 
+}	 	 
+.list-group-horizontal .list-group-item:last-child {	 	 
+ border-top-right-radius: 4px;	 	 
+ border-bottom-left-radius: 0;	 	 
+}
+.leaflet-control-layers-base {
+	text-align: left;
+}
+.leaflet-control-layers-overlays{
+	text-align: left;
+}
+.leaflet-bar-part {
+  padding: 0 0 0 0;
+}
+.leaflet-control-locate a{
+  padding: 0px;
+}
+#search_species_lang .list-group-item{
+  padding: 5px 7px;
+}
+.list-group-item{
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.panel-group{
+  margin-bottom:0px;
+}
+.panel{
+  margin-bottom:0px;
+}
+.checkbox{
+  margin-top: 10px
+  margin-bottom: 10px
+}
+
+
+
+/* MY BIRDING SPOT MAP*/
+ #map-myBirdingSpot{
+	height: 550px;
+}    
+
+#menu-improve{
+ z-index: 1; 
+ background-color: white;
+ position: relative;
+ border-radius: 0 0 20px 20px;
+ margin: auto; 
+ width: 1170px;
+}
+
+.row {	 	 
+ margin-top: 10px;	 	 
+ margin-bottom: 10px;	 	 
+}	 	 
+.toggle-perso {	 	 
+ padding-left: 70px;	 	 
+ padding-right: 70px;	 	 
+ padding-bottom: 20px;	 	 
+ padding-top: 15px;	 	 
+}	 	 
+.checklist-perso {	 	 
+ padding-left: 30px;	 	 
+}	 	 
+.shadow-left, .shadow-right {	 	 
+ display: none !important;	 	 
+}	 	 
+.avada-skin-rev {	 	 
+ border-top: none !important;	 	 
+ border-bottom: none !important;	 	 
+}	
+
+ 
+

@@ -1,0 +1,23 @@
+{
+  "name": "myBirdingSpot",
+  "main": "myBirdingSpot.js",
+  "homepage": "https://github.com/Zoziologie/myBirdingSpot",
+  "authors": [
+    "rafnuss <rafnuss@gmail.com>"
+  ],
+  "description": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "leaflet": "^0.7.7",
+    "leaflet-providers": "^1.1.11",
+    "Leaflet": "https://github.com/jseppi/Leaflet.MakiMarkers",
+    "Leaflet.MakiMarkers": "git://github.com/jseppi/Leaflet.MakiMarkers.git#^2.0.0"
+  }
+}
