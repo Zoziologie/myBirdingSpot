@@ -166,10 +166,11 @@ function LoadRegion(){
 
 
 jQuery(document).ready(function(){
+    L.MakiMarkers.accessToken = "pk.eyJ1IjoicmFmbnVzcyIsImEiOiIzMVE1dnc0In0.3FNMKIlQ_afYktqki-6m0g";    
 	
 	// Initiate the map
 	map = L.map('map-myBirdingSpot',{sleep:false});
-	
+
 	baseLayers = {
 		'MapBox' 		: L.tileLayer.provider('MapBox', {id: 'rafnuss.npl3amec', accessToken: 'pk.eyJ1IjoicmFmbnVzcyIsImEiOiIzMVE1dnc0In0.3FNMKIlQ_afYktqki-6m0g'}).addTo(map),
 		'OpenStreetMap' : L.tileLayer.provider('OpenStreetMap.Mapnik'),

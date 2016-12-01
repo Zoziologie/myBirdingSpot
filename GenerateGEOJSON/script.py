@@ -108,7 +108,7 @@ def creategeojson(filename, regions):
 
 
 
-    with io.open("hotspot_per_country/export_" + '-'.join(regions) + ".geojson", "w" , encoding="UTF-8") as file:
+    with io.open("../GEOJSON/hotspot_per_country/export_" + '-'.join(regions) + ".geojson", "w" , encoding="UTF-8") as file:
         print('{\n\t"type": "FeatureCollection",\n\t"features":', file=file)
         geojson.dump(features, file, ensure_ascii=False)
         print('\n}', file=file)
@@ -118,14 +118,14 @@ def creategeojson(filename, regions):
 
 
 
-filename="MyEbirdData/MyEBirdData_2016_02.csv"
-regions=['CA', 'CA-QC', 'CH', 'FR', 'FR-A','FR-H','FR-U', 'GB', 'IS', 'DE' , 'IT', 'KE','AT', 'SE', 'US', 'BE', 'HR', 'DK','TN']
-region_country = ['CA', 'CH', 'FR', 'GB', 'IS', 'DE', 'IT', 'KE', 'AT', 'SE', 'US', 'DK', 'BE', 'HR','TN','RE']
+filename="../MyEbirdData/MyEBirdData_2016_12.csv"
+regions=['CH', 'FR', 'GB', 'DE', 'IT', 'BE','ES','NL']#'CA', 'CA-QC', 'CH', 'FR', 'FR-A','FR-H','FR-U', 'GB', 'IS', 'DE' , 'IT', 'KE','AT', 'SE', 'US', 'BE', 'HR', 'DK','TN']
+region_country = ['CH', 'FR', 'GB', 'DE', 'IT', 'BE','ES','NL']
 #region_country_david = ['BW', 'SE', 'GB', 'FR', 'CH', 'CA', 'ZM','US']
-#for region in regions:
-#    CreateGeoJson(filename, [region])
+for region in regions:
+    creategeojson(filename, [region])
 
-creategeojson(filename,region_country)
-#CreateGeoJson(filename,['CH'])
+#creategeojson(filename,region_country)
+#creategeojson(filename,['CH'])
 
 #creategeojson(filename,['RE'])
