@@ -1,5 +1,5 @@
 {
 	"type": "FeatureCollection",
 	"features":
-[{"type": "Feature", "geometry": {"coordinates": [-71.0202599, 42.3659007], "type": "Point"}, "properties": {"sp_nb": 2, "subnational1-code": "US-MA", "lat": "42.3659007", "sp_max": 2, "country-code": "US", "sp_region_nb": 2, "lng": "-71.0202599", "rank": 1, "sp_list": ["Herring Gull", "Feral Pigeon"], "subnational2-code": "", "checklists": ["S22089293"], "loc-name": "Logan Airport"}}]
+[{"geometry": {"coordinates": [-71.0202599, 42.3659007], "type": "Point"}, "type": "Feature", "properties": {"sp_nb": 2, "country-code": "US", "loc-id": "L469786", "subnational2-code": "US-MA-025", "lat": "42.3659007", "subnational1-code": "US-MA", "loc-name": "Logan Airport", "sp_list": ["Feral Pigeon", "Herring Gull"], "lng": "-71.0202599", "checklists": ["S22089293"], "sp_region_nb": 2, "sp_max": 2, "rank": 1}}]
 }
