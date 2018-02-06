@@ -118,8 +118,8 @@ def creategeojson(filename, regions):
 
 
 
-filename="../MyEbirdData/MyEBirdData_2016_12.csv"
-regions=['CH', 'FR', 'GB', 'DE', 'IT', 'BE','ES','NL']#'CA', 'CA-QC', 'CH', 'FR', 'FR-A','FR-H','FR-U', 'GB', 'IS', 'DE' , 'IT', 'KE','AT', 'SE', 'US', 'BE', 'HR', 'DK','TN']
+filename="../MyEbirdData/MyEBirdData_2018_02.csv"
+regions=['MA']#['CH', 'FR', 'GB', 'DE', 'IT', 'BE','ES','NL','CA', 'CA-QC', 'CH', 'FR', 'FR-A','FR-H','FR-U', 'GB', 'IS', 'DE' , 'IT', 'KE', 'AT', 'SE', 'US', 'BE', 'HR', 'DK','TN','AU','MO']
 region_country = ['CH', 'FR', 'GB', 'DE', 'IT', 'BE','ES','NL']
 #region_country_david = ['BW', 'SE', 'GB', 'FR', 'CH', 'CA', 'ZM','US']
 for region in regions:
