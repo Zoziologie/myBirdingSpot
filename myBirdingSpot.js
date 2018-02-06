@@ -68,7 +68,6 @@ function LoadGeoJson(country){
 }
 
 function LoadDescription(p){
-
 	jQuery.ajax({
 		dataType: "json",
 		contentType: "text/plain; charset=UTF-8",
@@ -82,28 +81,28 @@ function LoadDescription(p){
 				if (feature.geometry.type=="Point"){
 					switch (feature.properties['type']) {
 						case "observatory":
-							var icone = L.MakiMarkers.icon({
-								icon: 'lighthouse', 
-								color: '#444444',
-								size: 'l'
-							})
-							break;
+						var icone = L.MakiMarkers.icon({
+							icon: 'lighthouse', 
+							color: '#444444',
+							size: 'l'
+						})
+						break;
 						case "viewpoint":
-							var icone = L.MakiMarkers.icon({
-								icon: 'star',
-								color: '#738300',
-								size: 'l'
-							})
-							break;
+						var icone = L.MakiMarkers.icon({
+							icon: 'star',
+							color: '#738300',
+							size: 'l'
+						})
+						break;
 						case "parking":
-							var icone = L.MakiMarkers.icon({
-								icon: 'parking', 
-								color: '#1021A8',
-								size: 'l'
-							})
-							break;
+						var icone = L.MakiMarkers.icon({
+							icon: 'parking', 
+							color: '#1021A8',
+							size: 'l'
+						})
+						break;
 						default:
-							console.log(feature)
+						console.log(feature)
 					}
 					
 					L.marker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]],{
@@ -166,17 +165,14 @@ function LoadRegion(){
 
 
 jQuery(document).ready(function(){
-    L.MakiMarkers.accessToken = "pk.eyJ1IjoicmFmbnVzcyIsImEiOiIzMVE1dnc0In0.3FNMKIlQ_afYktqki-6m0g";    
+	L.MakiMarkers.accessToken = "pk.eyJ1IjoicmFmbnVzcyIsImEiOiIzMVE1dnc0In0.3FNMKIlQ_afYktqki-6m0g";    
 	
 	// Initiate the map
 	map = L.map('map-myBirdingSpot',{sleep:false});
 
 	baseLayers = {
 		'MapBox' 		: L.tileLayer.provider('MapBox', {id: 'rafnuss.npl3amec', accessToken: 'pk.eyJ1IjoicmFmbnVzcyIsImEiOiIzMVE1dnc0In0.3FNMKIlQ_afYktqki-6m0g'}).addTo(map),
-		'OpenStreetMap' : L.tileLayer.provider('OpenStreetMap.Mapnik'),
-		'Outdoors' 		: L.tileLayer.provider('Thunderforest.Outdoors'),
 		'Watercolor' 	: L.tileLayer.provider('Stamen.Watercolor'),
-		'NASAGIBS' 		: L.tileLayer.provider('NASAGIBS.ViirsEarthAtNight2012')
 	};
 	
 	hotspot_eBird = new L.geoJson([],{pointToLayer: LoadHotspot});
@@ -190,7 +186,7 @@ jQuery(document).ready(function(){
 	control_layer = L.control.layers(baseLayers,overlays).addTo(map);
 	
 	// Load Data	
-	var country = jQuery('#map-myBirdingSpot').attr('data-country');
+	country = jQuery('#map-myBirdingSpot').attr('data-country');
 	LoadGeoJson(country);
 	
 	if (country=='all'){
@@ -198,5 +194,27 @@ jQuery(document).ready(function(){
 	}
 
 	jQuery(".my-layer-item").html(jQuery('#map-myBirdingSpot').attr('data-country'))
-	
+
+
+/*
+	// New
+	var hotspots;
+	jQuery.get( 'http://ebird.org/ws1.1/ref/hotspot/region?fmt=xml&r=' +country, function( hotspots_xml ) {
+		var a = jQuery.parseJSON(xml2json(hotspots_xml).replace('undefined',''))
+		hotspots = a.response.result.location
+		hotspots.forEach(function(hotspot,hotspot_id,hotspots_obj){
+			jQuery.getJSON('http://zoziologie.raphaelnussbaumer.com/mBS-js/list?ebird_code='+hotspot['loc-id'],function(list){
+				console.log(list)
+				if (list.length==0){
+					for (var attrname in list) { hotspots_obj[hotspot_id][attrname] = list[attrname]; }
+				} else {
+					hotspots_obj.splice(hotspot_id, 1);
+				}
+			});
+		})
+	})
+
+*/
+
+
 });
