@@ -1,4 +1,5 @@
 # myBirdingSpot
+DEPRECATED
 
 Updated version available [See Your Observation](https://github.com/Zoziologie/SeeYourObservations) - [DEMO](https://zoziologie.raphaelnussbaumer.com/see-your-observations)
 
